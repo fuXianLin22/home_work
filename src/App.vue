@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1 class="title">hello world</h1>
     <FruitStore></FruitStore>
     <!-- <hr /> -->
     <LikeMovieType></LikeMovieType>
@@ -12,9 +13,14 @@ import FruitStore from "./components/FruitStore.vue";
 
 export default {
   name: "App",
-  components: { FruitStore, LikeMovieType },
+  components: {FruitStore, LikeMovieType},
 };
 </script>
 
-<style>
+<style scoped>
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
